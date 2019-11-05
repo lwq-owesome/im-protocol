@@ -1,0 +1,15 @@
+// authoer:liwenqiang
+//emial: awesome.li@aliyun.com
+
+syntax = "proto3";
+
+option java_outer_classname = "AuthenticateRequestProto";
+option java_package = "com.awesome.im.proto";
+
+
+//  protoc --java_out src/main/java/ src/main/resources/UserAuthRequestProto.proto
+message AuthenticateRequest {
+    string uid = 1;
+    string token = 2;
+    int64 timestamp = 3;
+}
